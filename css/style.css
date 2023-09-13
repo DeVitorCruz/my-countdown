@@ -1,0 +1,194 @@
+@import "font-awesome.min.css";
+@import "prism.css";
+@import "simplyCountdown.theme.default.css";
+@import "simplyCountdown.theme.losange.css";
+
+:root {
+    --rounder: 6px;
+}
+
+*, *:after, *:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+}
+
+body {
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+p {
+    font-size: 18px;
+    line-height: 22px;
+    margin: 20px 0;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+footer {
+    background: darkblue;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-weight: 600;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: darkblue;
+    border-bottom: 5px solid rgba(57, 57, 129, 0.953);
+    padding: 20px;
+}
+
+header .header-content {
+    text-align: center;
+}
+
+header .header-content h1 {
+    font-style: italic;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #f2e6dc;
+}
+
+header .header-content h2 {
+    font-size: 1.33rem;
+    color: #f2e6dc;
+    margin: 20px 0;
+}
+
+header .header-content .repo-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    color: #f2e6dc;
+    border: 2px solid #f2e6dc;
+    border-radius: 2px;
+    text-decoration: none;
+    padding: 10px;
+    transition: .1s ease-in-out all;
+    display: block;
+    margin: 0 20px 20px 20px;
+    border-radius: var(--rounder);
+}
+
+.button span {
+    display: none;
+}
+
+.container {
+    width: 100%;
+    padding: 0 20px;
+    margin: auto;
+}
+
+main > section:not(:last-of-type) {
+    border-bottom: 1px solid darkblue;
+    padding-bottom: 20px;
+}
+
+main a {
+    font-weight: 700;
+    text-decoration: none;
+    transition: .2s ease all;
+}
+
+main h2 {
+    font-size: 26px;
+    color: #02658c;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+main h3 {
+    font-size: 20px;
+    color: #02658c;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+main h3 a {
+    color: #02658c;
+    text-decoration: none;
+}
+
+.note {
+    background: #0386a5;
+    color: #fff;
+    font-style: italic;
+    border-radius: 2px;
+    padding: 6.6666666667px 20px;
+    border-radius: var(--rounder);
+}
+
+.examples h3 {
+    margin: 20px 0 6.6666666667px 0;
+}
+
+.examples h3+p {
+    margin-top: 0;
+}
+
+.changelog h3:before {
+    content: "\3f";
+    display: inline-block;
+    margin-right: 10px;
+    transform: translateY(-2px);
+}
+
+.changelog ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.changelog ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.changelog h3:after {
+    content: "\3f";
+    display: inline-block;
+    margin-right: 10px;
+    transform: rotate(180deg),
+        translateY(-4px);
+}
+
+footer a {
+    color: #02658c;
+    text-decoration: none;
+}
